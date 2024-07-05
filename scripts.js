@@ -16,6 +16,7 @@ const contactForm = () => {
     const errorMessages = ['This field is required', 'Please enter a valid email address', 'Please select a query type', 'To submit this form, please consent to being contacted'];
     const errorArr = [...error];
     const inptArr = [input[0], input[1]];
+    const radioArr = [...radios];
 
 
 
@@ -75,12 +76,22 @@ const contactForm = () => {
         } else if (check.checked) {
             errorArr[5].classList.remove("cont-form__show");
         }
-        if (!radioDot[0].classList.contains("cont-form__show") && !radioDot[1].classList.contains("cont-form__show")) {
+          if (!radioDot[0].classList.contains("cont-form__show") && !radioDot[1].classList.contains("cont-form__show")) {
             errorArr[3].classList.add("cont-form__show");
+            radioArr.forEach(r => r.style.borderColor = 'hsl(0, 66%, 54%)');
             errorArr[3].innerHTML = errorMessages[2];
         }
-        if (radioDot[0].classList.contains("cont-form__show") || radioDot[1].classList.contains("cont-form__show")) {
+          if (radioDot[0].classList.contains("cont-form__show") || radioDot[1].classList.contains("cont-form__show")) {
             errorArr[3].classList.remove("cont-form__show");
+            radioArr.forEach(r => r.style.borderColor = 'hsl(186, 15%, 59%)');
+        }
+        for (let i = 0; i < input.length; i++) {
+            if (errorArr[i].classList.contains("cont-form__show")) {
+                input[i].style.borderColor = 'hsl(0, 66%, 54%)';
+            } 
+            if (errorArr[i].classList.contains("cont-form__show") === false) {
+                input[i].style.borderColor = 'hsl(186, 15%, 59%)';
+            }
         }
     }
 
