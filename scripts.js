@@ -101,7 +101,7 @@ const contactForm = () => {
         
     }
 
-
+    //disable input fields after submitting
     const disableInputs = () => {
        allInputs.forEach(i => i.disabled = true);
     }
