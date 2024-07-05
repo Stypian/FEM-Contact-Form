@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="scripts.js"></script>
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+  <main class="cont-form__main">
+    <form class="cont-form__container">
+      <div class="cont-form__inner">
+        <header class="cont-form__header">
+          <h1 class="cont-form__h1">Contact Us</h1>
+        </header>
+        <div class="cont-form__form-wrap">
+          <div class="cont-form__inpt-wrap">
+            <h2 class="cont-form__inpt-label">First Name</h2>
+            <input type="text" class="cont-form__inpt">
+            <span class="cont-form__error"></span>
+          </div>
+          <div class="cont-form__inpt-wrap">
+            <h2 class="cont-form__inpt-label">Last Name</h2>
+            <input type="text" class="cont-form__inpt">
+            <span class="cont-form__error"></span>
+          </div>
+        </div>
+        <div class="cont-form__form-wrap">
+          <div class="cont-form__inpt-wrap">
+            <h2 class="cont-form__inpt-label">Email Address</h2>
+            <input type="email" class="cont-form__inpt">
+            <span class="cont-form__error"></span>
+          </div>
+        </div>
+        <div class="cont-form__form-wrap">
+          <div class="cont-form__inpt-wrap">
+            <h2 class="cont-form__inpt-label">Query Type</h2>
+            <label class="cont-form__radio-wrap">
+              <input type="radio" class="cont-form__radio" name="query">
+              <div class="cont-form__radio-cover">
+                <img src="assets/images/icon-radio-selected.svg" class="cont-form__radio-selected">
+              </div>
+              <h2 class="cont-form__radio-h2">General Enquiry</h2>
+            </label>
+            <span class="cont-form__error"></span>
+          </div>
+          <div class="cont-form__inpt-wrap">
+            <h2 class="cont-form__inpt-label cont-form__inpt-label--hide">Query Type</h2>
+            <label class="cont-form__radio-wrap">
+              <input type="radio" class="cont-form__radio" name="query">
+              <div class="cont-form__radio-cover">
+                <img src="assets/images/icon-radio-selected.svg" class="cont-form__radio-selected">
+              </div>
+              <h2 class="cont-form__radio-h2">Support Request</h2>
+            </label>
+          </div>
+        </div>
+        <div class="cont-form__form-wrap">
+          <div class="cont-form__inpt-wrap">
+            <h2 class="cont-form__inpt-label">Message</h2>
+            <textarea class="cont-form__inpt cont-form__inpt--text"></textarea>
+            <span class="cont-form__error cont-form__error--text"></span>
+          </div>
+        </div>
+        <label class="cont-form__form-wrap cont-form__form-wrap--check">
+          <div class="cont-form__check-wrap">
+            <input type="checkbox" class="cont-form__check">
+            <div class="cont-form__check-cover"></div>
+            <h2 class="cont-form__inpt-label cont-form__inpt-label--check">I consent to being contacted by the team</h2>
+          </div>
+          <span class="cont-form__error cont-form__error--check"></span>
+        </label>
+        <button class="cont-form__form-submit">Submit</button>
+      </div>
+    </form>
+    <div class="cont-form__form-cont">
+      <div class="cont-form__success">
+        <div class="cont-form__success-inner">
+          <div class="cont-form__success-header">
+            <img src="assets/images/icon-success-check.svg" class="cont-form__success-icon" alt="success">
+            <h2 class="cont-form__success-h2">Message Sent!</h2>
+          </div>
+          <div class="cont-form__success-message">
+            <p class="cont-form__success-p">Thanks for completing the form, we'll be in touch soon!</p>
+          </div>
+        </div>
+      </div>
+      <form class="cont-form__container2">
+        <div class="cont-form__inner">
+          <header class="cont-form__header">
+            <h1 class="cont-form__h1">Contact Us</h1>
+          </header>
+          <div class="cont-form__form-wrap">
+            <div class="cont-form__inpt-wrap">
+              <h2 class="cont-form__inpt-label">First Name</h2>
+              <input type="text" class="cont-form__inpt">
+              <span class="cont-form__error"></span>
+            </div>
+            <div class="cont-form__inpt-wrap">
+              <h2 class="cont-form__inpt-label">Last Name</h2>
+              <input type="text" class="cont-form__inpt">
+              <span class="cont-form__error"></span>
+            </div>
+          </div>
+          <div class="cont-form__form-wrap">
+            <div class="cont-form__inpt-wrap">
+              <h2 class="cont-form__inpt-label">Email Address</h2>
+              <input type="email" class="cont-form__inpt">
+              <span class="cont-form__error"></span>
+            </div>
+          </div>
+          <div class="cont-form__form-wrap">
+            <div class="cont-form__inpt-wrap">
+              <h2 class="cont-form__inpt-label">Query Type</h2>
+              <label class="cont-form__radio-wrap">
+                <input type="radio" class="cont-form__radio" name="query">
+                <div class="cont-form__radio-cover">
+                  <img src="assets/images/icon-radio-selected.svg" class="cont-form__radio-selected">
+                </div>
+                <h2 class="cont-form__radio-h2">General Enquiry</h2>
+              </label>
+              <span class="cont-form__error"></span>
+            </div>
+            <div class="cont-form__inpt-wrap">
+              <h2 class="cont-form__inpt-label cont-form__inpt-label--hide">Query Type</h2>
+              <label class="cont-form__radio-wrap">
+                <input type="radio" class="cont-form__radio" name="query">
+                <div class="cont-form__radio-cover">
+                  <img src="assets/images/icon-radio-selected.svg" class="cont-form__radio-selected">
+                </div>
+                <h2 class="cont-form__radio-h2">Support Request</h2>
+              </label>
+            </div>
+          </div>
+          <div class="cont-form__form-wrap">
+            <div class="cont-form__inpt-wrap">
+              <h2 class="cont-form__inpt-label">Message</h2>
+              <textarea class="cont-form__inpt cont-form__inpt--text"></textarea>
+              <span class="cont-form__error cont-form__error--text"></span>
+            </div>
+          </div>
+          <label class="cont-form__form-wrap cont-form__form-wrap--check">
+            <div class="cont-form__check-wrap">
+              <input type="checkbox" class="cont-form__check">
+              <div class="cont-form__check-cover2"></div>
+              <h2 class="cont-form__inpt-label cont-form__inpt-label--check">I consent to being contacted by the team</h2>
+            </div>
+            <span class="cont-form__error cont-form__error--check"></span>
+          </label>
+          <button class="cont-form__form-submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">RonL</a>.
+  </div>
+</body>
+</html>

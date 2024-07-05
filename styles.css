@@ -1,0 +1,372 @@
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+        margin: 0;
+        background-color: hsl(148, 38%, 91%);
+    }
+
+    * {
+        font-size: 10px;
+        font-family: 'Karla';
+    }
+
+    @font-face {
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 200 800;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/karla/v31/qkBbXvYC6trAT7RVLtw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+    .cont-form__main {
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 1rem;
+        background-color: hsl(148, 38%, 91%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-form__container {
+        width: 76rem;
+        height: auto;
+        margin-top: 4rem;
+        border-radius: 1.6rem;
+        padding-block: 3.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .cont-form__success {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45rem;
+        height: 10rem;
+        border-radius: 10px;
+        background-color: hsl(187, 24%, 22%);
+    }
+
+    .cont-form__success-inner {
+        width: 88%;
+        height: 90%;
+        color: #fff;
+        position: relative;
+    }
+
+    .cont-form__success-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .cont-form__success-message {
+        display: flex;
+    }
+
+    .cont-form__success-h2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+    }
+
+    .cont-form__success-p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-top: 0;
+    }
+
+    .cont-form__form-cont {
+        display: none;
+        padding-top: 1rem;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-items: center;
+    }
+
+    .cont-form__container2 {
+        width: 76rem;
+        height: auto;
+        border-radius: 1.6rem;
+        padding-block: 3.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    .cont-form__inner {
+        width: 88%;
+        height: 88%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cont-form__header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .cont-form__h1 {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin-top: 0;
+        color: hsl(187, 24%, 22%);
+    }
+
+    .cont-form__form-wrap {
+        width: 100%;
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .cont-form__inpt-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+
+    .cont-form__inpt {
+        width: 100%;
+        padding-block: 1.4rem;
+        padding-inline: 2rem;
+        box-sizing: border-box;
+        border-radius: 8px;
+        border: solid 1px hsl(186, 15%, 59%);
+        outline: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .cont-form__inpt:focus {
+        border-color: hsl(169, 82%, 27%);
+    }
+
+    .cont-form__inpt--text {
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+    }
+
+    .cont-form__inpt:focus {
+        border-color: hsl(169, 82%, 27%);
+    }
+
+    .cont-form__inpt-label {
+        margin-top: 0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: hsl(187, 24%, 22%);
+    }
+
+    .cont-form__inpt-label:after {
+        content: ' *';
+        padding-left: .5rem;
+        font-weight: 700;
+        color: hsl(169, 82%, 27%);
+    }
+
+    .cont-form__inpt-label--hide {
+        visibility: hidden;
+    }
+
+    .cont-form__radio-wrap {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: solid hsl(186, 15%, 59%) 1px;
+        border-radius: 8px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .cont-form__radio {
+        margin-left: 2rem;
+        position: absolute;
+        opacity: 0;
+    }
+
+    .cont-form__radio-cover {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: solid grey 1px;
+    }
+
+    .cont-form__radio-selected {
+        display: none;
+    }
+
+    .cont-form__radio-h2 {
+        font-size: 1.7rem;
+        font-weight: 400;
+        color: hsl(187, 24%, 22%);
+        margin-block: 1.2rem;
+        padding-left: 5.6rem;
+    }
+
+
+    .cont-form__form-wrap--check {
+        margin-top: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 2.6rem;
+    }
+
+    .cont-form__check-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .cont-form__check {
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+
+    .cont-form__check:checked ~ .cont-form__check-cover {
+        background-color: hsl(169, 82%, 27%);
+        color: #fff;
+        border: none;
+    }
+
+    .cont-form__check-cover, .cont-form__check-cover2 {
+        position: absolute;
+        top: .3rem;
+        left: 0;
+        height: 1.6rem;
+        width: 1.6rem;
+        border: solid hsl(186, 15%, 59%) 2px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .cont-form__inpt-label--check {
+        padding-left: 3rem;
+        cursor: pointer;
+    }
+
+    .cont-form__check-cover:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .cont-form__check-cover:after {
+        left: 6px;
+        top: 3px;
+        width: 3px;
+        height: 7px;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+
+    .cont-form__check:checked ~ .cont-form__check-cover:after {
+        display: block;
+    }
+
+    .cont-form__form-submit {
+        color: #fff;
+        background-color: hsl(169, 82%, 27%);
+        font-size: 1.8rem;
+        padding-block: 1.9rem;
+        border-radius: 8px;
+        border: none;
+        margin-top: 1rem;
+        cursor: pointer;
+        align-self: stretch;
+    }
+
+    .cont-form__form-submit:active {
+        background-color: hsl(187, 24%, 22%);
+    }
+
+    .cont-form__error {
+        font-size: 1.6rem;
+        color: hsl(0, 66%, 54%);
+        padding-top: 1rem;
+        display: none;
+    }
+
+    .cont-form__error--text {
+        padding-bottom: 3.6rem;
+    }
+
+    .cont-form__error--check {
+        padding-top: 0;
+        padding-bottom: 3.6rem;
+        margin-top: -1.6rem;
+    }
+
+    .cont-form__show {
+        display: block;
+    }
+
+    @media screen and (max-height: 900px) {
+        .cont-form__main {
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 765px) {
+        .cont-form__container2 {
+            width: 98%;
+        }
+
+        .cont-form__form-cont {
+            width: 98%;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .cont-form__container, .cont-form__container2 {
+            width: 92%;
+        }
+
+        .cont-form__success {
+            width: 92%;
+        }
+
+        .cont-form__form-wrap {
+            flex-direction: column;
+        }
+
+        .cont-form__main {
+            height: auto;
+            padding-block: 3rem;
+        }
+
+        .cont-form__inpt-label--hide {
+            display: none;
+        }
+
+        .cont-form__inpt--text {
+            padding-bottom: 20rem;
+        }
+
+        .cont-form__inner {
+            width: 83%;
+        }
+    }
+
